@@ -3,9 +3,70 @@
 }
 
 .profile .profile__header{
-  height: 80vh;
-  background-color: red;
+  height: 70vh;
+  background-image: url("../image/pattern.png");
+  background-position: center center;
+  background-size: 150%;
   width: 100%;
   position: relative;
   top: -60px; /*globals.css에서 한 padding-top: 60px 상쇄*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.profile__header .profile__header-container{
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+.profile__header-container img{
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .profile__container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__container input{
+  color: transparent; /*커서 없애기*/
+  text-shadow: 0 0 0 black; /*커서 없애기*/
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  text-align: center;
+  overflow: auto; /*내용물 넘치면 스크롤 생김*/
+}
+
+.profile__actions{
+  display: flex;
+}
+
+.profile__action{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile__action-circle{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 50%;
+  color: #523737;
+  margin-bottom: 10px;
+}
+
+.profile__action-title{
+  font-size: 12px;
+  font-weight: 600;
 }
